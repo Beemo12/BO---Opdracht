@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /*10rem is 10px*/
+}
+
+body {
+    font-size: 1rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    min-height: 100vh;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+}
+
+.card {
+    width: 40rem;
+    height: 40rem;
+    border-radius: 5rem;
+    box-shadow: 0 0.1rem 0.5rem 0 rgba(0,0,0,0.2);
+    flex-shrink: 0;
+}
+
+.card--buy {
+    display: flex;
+    flex-grow: 0;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.card--buy img {
+    height: 80%;
+    width: 100%;
+}
+
+.card--buy p {
+    height: 20%;
+    font-size: 75%;
+    padding: 2rem;
+}
+
+.card--slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.card--slider > h2 {
+    font-size: 400%;
+}
+
+.card--slider > input {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 80%;
+    border-radius: 20rem;
+    height: 1.5rem;
+    background: linear-gradient(to right, #1488cc, #2b32b2);
+}
+
+.card--slider > input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background: linear-gradient(to right, #1488cc, #2b32b2);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    cursor: grab;
+}
+
+.card--slider > input::-moz-range-thumb {
+    background: linear-gradient(to right, #c1c5c7, #8e8f91);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: none;
+    cursor: grab;
+}
+
+.timerText {
+    font-size: 200%;
+}
+
+.card--stopwatch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.button {
+    padding: 1rem;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+.button--start {
+    background-color: #ffffff;
+}
+
+.button--stop {
+    background-color: #1a9b3a;
+}
+
+.button--reset {
+    background-color: #646464;
+}
