@@ -3,10 +3,11 @@
 const ctx1 = document.getElementById("myChart1").getContext("2d");
 const ctx2 = document.getElementById("myChart2").getContext("2d");
 const ctx3 = document.getElementById("myChart3").getContext("2d");
+const ctx4 = document.getElementById("myChart4").getContext("2d");
 
 // Data for the bar chart
 let data1 = {
-    labels: ["A", "B", "C", "D", "E" ],
+    labels: ["A", "B", "C", "D", "E"],
     datasets: [{
         label: "kwH",
         data: [100, 80, 40, 65, 30],
@@ -28,11 +29,11 @@ let data2 = {
     datasets: [{
         label: 'Bubble Chart',
         data: [
-            {x: 10, y: 20, r: 10},
-            {x: 30, y: 40, r: 15},
-            {x: 50, y: 60, r: 20},
-            {x: 70, y: 80, r: 25},
-            {x: 90, y: 100, r: 30}
+            { x: 10, y: 20, r: 10 },
+            { x: 30, y: 40, r: 15 },
+            { x: 50, y: 60, r: 20 },
+            { x: 70, y: 80, r: 25 },
+            { x: 90, y: 100, r: 30 }
         ],
         backgroundColor: 'rgb(255, 99, 132)'
     }]
@@ -92,6 +93,25 @@ let config3 = {
         }
     }
 };
+
+function updateTimeAndDate() {
+    const now = new Date();
+    const options = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: 'numeric',
+        minute: 'numeric',
+        second: 'numeric',
+        hour12: false,
+        timeZoneName: 'short'
+    };
+    document.getElementById('timeAndDate').textContent = now.toLocaleString('en-US', options);
+}
+
+updateTimeAndDate(); // Initial call
+setInterval(updateTimeAndDate, 1000);
 
 let myChart1 = new Chart(ctx1, config1);
 let myChart2 = new Chart(ctx2, config2);

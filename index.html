@@ -1,25 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Mijn dashboard</title>
 </head>
+
 <body>
-    <div id="container1" class="card card--chart">
-        <canvas id="myChart1"></canvas>
-    </div>
+    <header>
+        <div class="header-content">
+            <img src="img/logo.png" alt="logo">
+            <span class="header-text">energie.nl</span>
+        </div>
+    </header>
 
-    <div id="container2" class="card card--chart">
-        <canvas id="myChart2"></canvas>
-    </div>
+    <div class="card-container">
+        <div id="container1" class="card card--chart">
+            <canvas id="myChart1"></canvas>
+        </div>
 
-    <div id="container3" class="card card--chart">
-        <canvas id="myChart3"></canvas>
+        <div id="container2" class="card card--chart">
+            <canvas id="myChart2"></canvas>
+        </div>
+
+        <div id="container3" class="card card--chart">
+            <canvas id="myChart3"></canvas>
+        </div>
+
+        <div id="container4" class="card card--chart">
+            <canvas id="myChart4"></canvas>
+            <div class="time-container">
+                <span id="timeAndDate" class="timerText"></span>
+            </div>
+        </div>
+
+        <div id="container5" class="card card--chart">
+            <canvas id="myChart5"></canvas>
+        </div>
+
+        <div id="container6" class="card card--chart">
+            <canvas id="myChart6"></canvas>
+        </div>
+
+        <div id="container7" class="card card--chart">
+            <canvas id="myChart7"></canvas>
+        </div>
+
+        <div id="container8" class="card card--chart">
+            <canvas id="myChart8"></canvas>
+        </div>
+
+        <div id="container9" class="card card--chart">
+            <canvas id="myChart9"></canvas>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/script.js" defer></script>
 </body>
+
 </html>
