@@ -12,7 +12,7 @@
     <header>
         <div class="header-content">
             <img src="img/logo.png" alt="logo">
-            <span class="header-text">energie.nl</span>
+            <h1 class="header-text">energie.nl</h1>
         </div>
     </header>
 
@@ -37,15 +37,28 @@
         </div>
 
         <div id="container5" class="card card--chart">
-            <canvas id="myChart5"></canvas>
+            <div class="weather-card">
+                <h2>Weather</h2>
+                <div id="weather-info">
+                    <p>Loading...</p>
+                </div>
+            </div>
         </div>
 
         <div id="container6" class="card card--chart">
-            <canvas id="myChart6"></canvas>
+            <div class="lamp-card">
+                <h2>Lamp</h2>
+                <img id="lamp-toggle" class="lamp-off" src="img/lampje uit.png" alt="lamp">
+            </div>
         </div>
 
         <div id="container7" class="card card--chart">
             <canvas id="myChart7"></canvas>
+            <div class="time-container">
+                <h2>Sunrise & Sunset</h2>
+                <div id="sunrise"></div>
+                <div id="sunset"></div>
+            </div>
         </div>
 
         <div id="container8" class="card card--chart">
@@ -53,8 +66,12 @@
         </div>
 
         <div id="container9" class="card card--chart">
-            <canvas id="myChart9"></canvas>
+            <div class="arduino-widget">
+                <h2>Arduino Temperature</h2>
+                <div id="arduino-temperature" class="arduino-temperature">Loading...</div>
+            </div>
         </div>
+        
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

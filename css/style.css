@@ -10,22 +10,22 @@ html {
 
 body {
     font-size: 1.6rem;
-    background-color: #f2f2f2;
+    background-color: rgb(164, 164, 87); 
     font-family: Arial, sans-serif;
-    margin-top: 6rem; /* Add margin top to accommodate header */
+    margin-top: 6rem;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #82936f;
     padding: 1rem;
     box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);
     width: 100%;
     position: fixed;
     top: 0;
-    z-index: 1; /* Ensure header is above other content */
+    z-index: 1;
 }
 
 .header-content {
@@ -59,6 +59,7 @@ header {
     overflow: hidden;
     margin: 1rem;
     position: relative;
+    background-color: #cccccc; 
 }
 
 .card > canvas {
@@ -75,4 +76,39 @@ header {
     text-align: center;
     font-family: "Arial", sans-serif;
     font-size: 3rem;
+}
+
+.weather-card, .lamp-card {
+    background-color: #fff; 
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-card {
+    background-color: #cccccc; 
+}
+
+.lamp-card {
+    background-color: #cccccc;
+}
+
+.lamp-card h2, .weather-card h2 {
+    margin-bottom: 1rem;
+}
+
+.lamp-off {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.lamp-on {
+    background-color: yellow;
 }
